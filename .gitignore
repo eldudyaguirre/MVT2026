@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.sync.example
+
+node_modules/
+logs/
+
+*.log
+
+.git/
+.vscode/
+
+*.bak
+
+sync-worker/

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>JRR2026</title>
+  <meta name="description" content="Sistema de gestión JRR2026">
+  <meta name="theme-color" content="#09203C">
+  <meta name="application-name" content="JRR2026">
+
+  <!-- Icono del sitio y acceso directo -->
+  <link rel="icon" type="image/svg+xml" href="/img/logonuevov2.svg?v=20260909">
+  <link rel="apple-touch-icon" href="/img/logonuevov2.svg?v=20260909">
+
+  <!-- Open Graph: vista previa al compartir -->
+  <meta property="og:title" content="JRR2026">
+  <meta property="og:description" content="Sistema de gestión JRR2026">
+  <meta property="og:image" content="https://jrr2026/img/logonuevov2.svg?v=20260909">
+  <meta property="og:url" content="https://jrr2026/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="JRR2026">
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="JRR2026">
+  <meta name="twitter:description" content="Sistema de gestión JRR2026">
+  <meta name="twitter:image" content="https://jrr2026/img/logonuevov2.svg?v=20260909">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+  <main class="login-container">
+    <div class="login-logo"><img src="../img/logonuevov2.svg?v=20260909" alt="JRR2026"></div>
+    <h1>Inicio de Sesión</h1>
+
+<form id="loginForm">
+
+  <div class="field">
+    <label for="empresa">Empresa</label>
+    <select id="empresa" name="empresa" required>
+      <option value="0103749594001">0103749594001</option>
+      <option value="0195141177001">0195141177001</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="usuario">Usuario</label>
+    <input type="text" id="usuario" name="usuario" placeholder="Usuario" autocomplete="username" required>
+  </div>
+
+  <div class="field">
+    <label for="clave">Contraseña</label>
+    <input type="password" id="clave" name="clave" placeholder="••••••••" autocomplete="current-password" required>
+  </div>
+
+  <label class="show-password">
+    <input type="checkbox" id="checkbox">
+    <span>Mostrar contraseña</span>
+  </label>
+
+  <button type="submit" id="submit">Iniciar sesión</button>
+  <div id="mensaje"></div>
+
+</form>
+  </main>
+
+  <script src="/js/login.js?v=20260930"></script>
+</body>
+</html>
