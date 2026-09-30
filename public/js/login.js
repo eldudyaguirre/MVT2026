@@ -2,6 +2,40 @@ const form = document.getElementById('loginForm');
 const empresa = document.getElementById('empresa');
 const usuario = document.getElementById('usuario');
 const clave = document.getElementById('clave');
+const empresaSelect = document.getElementById('empresaSelect');
+const empresaSelectButton = document.getElementById('empresaSelectButton');
+const empresaSelectValue = document.getElementById('empresaSelectValue');
+const empresaSelectMenu = document.getElementById('empresaSelectMenu');
+const empresaOptions = [...document.querySelectorAll('.empresa-option')];
+
+function cerrarEmpresaSelect() {
+  empresaSelect.classList.remove('open');
+  empresaSelectButton.setAttribute('aria-expanded', 'false');
+}
+
+empresaSelectButton.addEventListener('click', () => {
+  const abierto = empresaSelect.classList.toggle('open');
+  empresaSelectButton.setAttribute('aria-expanded', abierto ? 'true' : 'false');
+});
+
+empresaOptions.forEach((option) => {
+  option.addEventListener('click', () => {
+    empresa.value = option.dataset.value;
+    empresaSelectValue.textContent = option.dataset.value;
+    empresaOptions.forEach((item) => {
+      const selected = item === option;
+      item.classList.toggle('selected', selected);
+      item.setAttribute('aria-selected', selected ? 'true' : 'false');
+    });
+    empresa.dispatchEvent(new Event('change', { bubbles: true }));
+    cerrarEmpresaSelect();
+  });
+});
+
+document.addEventListener('click', (event) => {
+  if (!empresaSelect.contains(event.target)) cerrarEmpresaSelect();
+});
+
 const checkbox = document.getElementById('checkbox');
 const submit = document.getElementById('submit');
 const mensaje = document.getElementById('mensaje');
