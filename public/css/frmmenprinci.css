@@ -33,16 +33,16 @@ html body .sidebar .menu>li{display:block!important;width:100%!important}
 html body .sidebar .menu a,html body .sidebar .menu button.menu-parent{display:flex!important;align-items:center!important;width:100%!important;box-sizing:border-box!important;text-decoration:none!important;border:0!important;outline:0!important;font-family:Arial,sans-serif!important}
 html body .sidebar .menu a{color:#555!important;background:transparent!important;font-weight:400!important}
 html body .sidebar .menu a:hover,html body .sidebar .menu button.menu-parent:hover{background:#f1f4f8!important;color:#073674!important}
-html body .sidebar .menu a.active{background:#f0f2f5!important;color:#073674!important;font-weight:700!important}
+html body .sidebar .menu a.active{background:#f0f2f5!important;color:#C5D13B!important;font-weight:700!important}
 html body .sidebar .menu .menu-parent{color:#555!important;background:transparent!important;font-size:14px!important;font-weight:400!important;padding:12px 13px!important;gap:13px!important}
-html body .sidebar .menu .menu-group.open>.menu-parent{background:#f0f2f5!important;color:#073674!important;font-weight:700!important}
+html body .sidebar .menu .menu-group.open>.menu-parent{background:#f0f2f5!important;color:#C5D13B!important;font-weight:700!important}
 html body .sidebar .menu .menu-parent span{flex:1!important}
 html body .sidebar .menu .submenu{display:none!important;flex-direction:column!important;gap:2px!important;width:100%!important;margin:0!important;padding:4px 0 5px 20px!important;box-sizing:border-box!important;border-left:2px solid #edf0f4!important}
 html body .sidebar .menu .menu-group.open>.submenu{display:flex!important}
 html body .sidebar .menu .submenu>li{display:block!important;width:100%!important;margin:0!important;padding:0!important}
 html body .sidebar .menu .submenu a{display:flex!important;width:100%!important;align-items:center!important;padding:9px 12px 9px 17px!important;box-sizing:border-box!important;color:#6b7280!important;background:transparent!important;font-size:13px!important;font-weight:400!important;line-height:18px!important;text-decoration:none!important}
 html body .sidebar .menu .submenu a:hover{background:#f5f7fa!important;color:#073674!important}
-html body .sidebar .menu .submenu a.active{background:#f0f2f5!important;color:#073674!important;font-weight:700!important}
+html body .sidebar .menu .submenu a.active{background:#f0f2f5!important;color:#C5D13B!important;font-weight:700!important}
 html body .sidebar .menu .submenu>.menu-group>.menu-parent{display:flex!important;padding:9px 12px 9px 17px!important;font-size:13px!important;line-height:18px!important;color:#6b7280!important;background:transparent!important;font-weight:400!important}
 html body .sidebar .menu .submenu>.menu-group>.submenu{display:none!important;margin-left:12px!important;padding-left:12px!important}
 html body .sidebar .menu .submenu>.menu-group.open>.submenu{display:flex!important}
@@ -59,3 +59,11 @@ html body .sidebar .menu .icon{width:20px!important;height:20px!important;min-wi
 /* PALETA SUPERIOR MVT2026 */
 html body .topbar{background:#374E5B!important;color:#fff!important}
 html body .topbar .topbar-title span{color:#C5D13B!important}
+
+/* MENUS ACTIVOS: color de marca */
+html body .sidebar .menu a.active,
+html body .sidebar .menu .menu-group.open>.menu-parent,
+html body .sidebar .menu .submenu a.active,
+html body .sidebar .menu .submenu .menu-group.open>.menu-parent{color:#C5D13B!important}
+html body .sidebar .menu a.active::before,
+html body .sidebar .menu .menu-group.open>.menu-parent::before{background:#C5D13B!important}
