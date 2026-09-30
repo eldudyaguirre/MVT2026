@@ -41,10 +41,20 @@
 
   <div class="field">
     <label for="empresa">Empresa</label>
-    <select id="empresa" name="empresa" required>
-      <option value="0103749594001">0103749594001</option>
-      <option value="0195141177001">0195141177001</option>
-    </select>
+    <div class="empresa-select" id="empresaSelect">
+      <select id="empresa" name="empresa" required aria-hidden="true" tabindex="-1">
+        <option value="0103749594001">0103749594001</option>
+        <option value="0195141177001">0195141177001</option>
+      </select>
+      <button type="button" class="empresa-select-button" id="empresaSelectButton" aria-haspopup="listbox" aria-expanded="false">
+        <span id="empresaSelectValue">0103749594001</span>
+        <span class="empresa-select-arrow" aria-hidden="true"></span>
+      </button>
+      <div class="empresa-select-menu" id="empresaSelectMenu" role="listbox" aria-label="Empresa">
+        <button type="button" class="empresa-option selected" data-value="0103749594001" role="option" aria-selected="true">0103749594001</button>
+        <button type="button" class="empresa-option" data-value="0195141177001" role="option" aria-selected="false">0195141177001</button>
+      </div>
+    </div>
   </div>
 
   <div class="field">
@@ -68,6 +78,6 @@
 </form>
   </main>
 
-  <script src="/js/login.js?v=20260930"></script>
+  <script src="/js/login.js?v=20260930b"></script>
 </body>
 </html>
