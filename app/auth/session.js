@@ -56,6 +56,7 @@ function createSession(user) {
     nombre: user.nomusuari,
     s0100: user.s0100,
     segapp: normalizarSegapp(user.segapp),
+    empresa: user.empresa,
     createdAt: Date.now(),
   });
 }
