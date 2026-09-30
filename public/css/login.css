@@ -16,3 +16,16 @@ button[type=submit]{display:block;width:170px;margin:15px auto 0;padding:12px;ba
 button[type=submit]:hover,button[type=submit]:focus{background:#B4812D;color:black;box-shadow:0 0 15px rgba(255,255,255,.8);outline:none;border:2px solid #B4812D}button[type=submit]:disabled{opacity:.6;cursor:wait}
 #mensaje{min-height:22px;margin-top:14px;color:#374E5B;font-size:14px}#mensaje.success{color:#B4812D}
 @media(max-width:480px){body{padding:14px}.login-container{width:94vw;min-height:500px;padding:20px 15px 30px;border-radius:24px}.login-logo{width:180px;height:135px;margin-bottom:8px}h1{font-size:32px;margin-bottom:23px}input[type=text],input[type=password],select#empresa{width:230px}input[type=text]:focus,input[type=password]:focus,select#empresa:focus{width:min(290px,78vw)}}
+
+/* Selector de empresa personalizado */
+.empresa-select{position:relative;width:250px;margin:0 auto 4px;text-align:center}
+.empresa-select select{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+.empresa-select-button{display:flex;align-items:center;justify-content:center;position:relative;width:100%;height:44px;margin:0;padding:9px 42px 9px 14px;background:#fff;color:#374E5B;border:2px solid #374E5B;border-radius:20px;font-family:'Poppins',sans-serif;font-size:16px;font-weight:500;cursor:pointer;transition:.25s}
+.empresa-select-button:hover,.empresa-select.open .empresa-select-button{border-color:#B4812D;box-shadow:0 0 0 2px rgba(180,129,45,.12)}
+.empresa-select-arrow{position:absolute;right:15px;top:50%;width:9px;height:9px;border-right:2px solid #374E5B;border-bottom:2px solid #374E5B;transform:translateY(-65%) rotate(45deg);transition:.2s}
+.empresa-select.open .empresa-select-arrow{transform:translateY(-25%) rotate(225deg);border-color:#B4812D}
+.empresa-select-menu{display:none;position:absolute;z-index:1000;top:calc(100% + 5px);left:0;width:100%;padding:5px;background:#fff;border:2px solid #B4812D;border-radius:15px;box-shadow:0 8px 20px rgba(0,0,0,.18)}
+.empresa-select.open .empresa-select-menu{display:block}
+.empresa-option{display:block;width:100%;padding:9px 10px;background:#fff;color:#374E5B;border:0;border-radius:10px;font-family:'Poppins',sans-serif;font-size:15px;text-align:center;cursor:pointer}
+.empresa-option:hover,.empresa-option.selected{background:#B4812D;color:#fff}
+@media(max-width:480px){.empresa-select{width:230px}.empresa-select:focus-within .empresa-select-button{width:min(290px,78vw)}}
