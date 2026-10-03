@@ -1,4 +1,4 @@
-# JRR2026
+# MAVTRONIC
 
 Aplicación web de Avícola y Porcina Luisin.
 
@@ -7,7 +7,7 @@ Aplicación web de Avícola y Porcina Luisin.
 El proyecto utiliza **Node.js + Express** como API y **PostgreSQL** como base de datos. El frontend permanece separado en HTML, CSS y JavaScript dentro de `public`.
 
 ```text
-JRR2026/
+MAVTRONIC/
 ├── app/
 │   ├── auth/
 │   │   └── session.js
