@@ -1,5 +1,5 @@
 {
-  "name": "jrr2026-api",
+  "name": "mavtronic-api",
   "version": "1.0.0",
   "description": "API de prueba para conectar servidor PostgreSQL con PostgreSQL mediante Tailscale y Railtail.",
   "main": "server.js",
